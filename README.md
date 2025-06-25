@@ -56,5 +56,12 @@ Operating System:
 Linux / Windows 10+ / macOS (CPU-only)
 
 
+to run the server after installing cmake use this code:
+
+./build/bin/llama-server \
+  -m ./models/tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf \
+  --host 127.0.0.1 \
+  --port 8080
+
 
 ![WhatsApp Image 2025-06-25 at 14 58 15](https://github.com/user-attachments/assets/0c382095-af60-4227-a832-4f7c2310b267)
