@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarvis AI Chatbot (OpenAI GPT - INSECURE)</title> <!-- Updated title -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+
+
+    <script type="module" src="script.js"></script>
+
+</head>
+<body>
+<h1>מודל AI</h1>
+
+<div class="container">
+    <!-- API Status Area -->
+    <div id="api-status-area" style="text-align: center; margin-bottom: 15px; padding: 10px; border: 1px dashed #ccc; background-color: #f9f9f9;">
+        <div class="loading-indicator">
+            <div id="apiKeyLoadingBar" class="loading-bar-container">
+                <div class="loading-bar"></div>
+            </div>
+            <p id="apiKeyStatus" class="status-info">מאתחל חיבור ל-OpenAI...</p> <!-- Updated text -->
+        </div>
+    </div>
+
+    <!-- File Upload Area (remains the same) -->
+    <div id="file-upload-area">
+        <label for="csvFile">טען קובץ CSV (שמור כ-UTF-8):</label>
+        <input type="file" id="csvFile" accept=".csv">
+        <div class="loading-indicator">
+            <div id="fileLoadingBar" class="loading-bar-container">
+                <div class="loading-bar"></div>
+            </div>
+            <p id="status">אנא טען קובץ CSV כדי להתחיל.</p>
+        </div>
+    </div>
+
+    <!-- Chatbox (remains the same) -->
+    <div id="chatbox">
+        <!-- הודעות הצ'אט יופיעו כאן -->
+    </div>
+
+    <!-- Input Area (remains the same) -->
+    <div id="input-area">
+        <input type="text" id="userMessage" placeholder="טוען..." autocomplete="off" disabled>
+        <button id="sendButton" disabled>שלח</button>
+    </div>
+</div>
+
+</body>
+</html>
